@@ -8,7 +8,7 @@ data "aws_ami" "ubuntu" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-  owners = ["127214159096"] # Canonical
+  owners = ["099720109477"] # Canonical
 }
 provider "aws" {
   region = "us-east-1"
