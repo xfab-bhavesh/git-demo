@@ -14,7 +14,7 @@ provider "aws" {
   region = "us-east-1"
 }
 # EC2 Instance
-resource "aws_instance" "Test Instance 3" {
+resource "aws_instance" "test_instance1" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t3.micro"
   tags = {
