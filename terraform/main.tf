@@ -8,13 +8,13 @@ data "aws_ami" "ubuntu" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-  owners = ["099720109477"] # Canonical
+  owners = ["127214159096"] # Canonical
 }
 provider "aws" {
   region = "us-east-1"
 }
 # EC2 Instance
-resource "aws_instance" "web" {
+resource "aws_instance" "Test Instance 3" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t3.micro"
   tags = {
